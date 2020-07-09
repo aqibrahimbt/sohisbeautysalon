@@ -20,7 +20,7 @@
 }
 
 .theme-bg {
-    background: #d19f68
+    background: #25ced1
 }
 
 .brand-bg {
@@ -40,30 +40,30 @@
 }
 
 .theme-color {
-    color: #d19f68
+    color: #25ced1
 }
 
 .boxed-btn {
     background: #fff;
-    color: #d19f68 !important;
+    color: #25ced1 !important;
     display: inline-block;
     padding: 18px 44px;
     font-family: "Oswald", sans-serif;
     font-size: 14px;
     font-weight: 400;
     border: 0;
-    border: 1px solid #d19f68;
+    border: 1px solid #25ced1;
     letter-spacing: 3px;
     text-align: center;
-    color: #d19f68;
+    color: #25ced1;
     text-transform: uppercase;
     cursor: pointer
 }
 
 .boxed-btn:hover {
-    background: #d19f68;
+    background: #25ced1;
     color: #fff !important;
-    border: 1px solid #d19f68
+    border: 1px solid #25ced1
 }
 
 .boxed-btn:focus {
@@ -372,7 +372,7 @@ hr {
 }
 
 .btn {
-    background: #d19f68;
+    background: #25ced1;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     padding: 27px 44px;
@@ -515,7 +515,7 @@ hr {
     top: 0;
     width: 101%;
     height: 101%;
-    background: #d19f68;
+    background: #25ced1;
     z-index: -1;
     transition: transform 0.5s;
     transition-timing-function: ease;
@@ -535,7 +535,7 @@ hr {
 }
 
 #scrollUp, #back-top {
-    background: #d19f68;
+    background: #25ced1;
     height: 50px;
     width: 50px;
     right: 31px;
@@ -1961,7 +1961,7 @@ hr {
     position: relative;
     border-style: solid;
     border-width: 1px;
-    border-top-color: #d19f68;
+    border-top-color: #25ced1;
     border-bottom-color: transparent;
     border-left-color: transparent;
     border-right-color: transparent;
@@ -2468,7 +2468,7 @@ hr {
 }
 
 .theme-bg {
-    background: #d19f68
+    background: #25ced1
 }
 
 .brand-bg {
@@ -2488,7 +2488,7 @@ hr {
 }
 
 .theme-color {
-    color: #d19f68
+    color: #25ced1
 }
 
 .header-area .main-header {
@@ -2558,7 +2558,7 @@ hr {
     content: "";
     width: 14px;
     height: 1px;
-    background: #d19f68;
+    background: #25ced1;
     left: 25px;
     bottom: 33px;
     transform: rotate(-46deg);
@@ -2581,7 +2581,7 @@ hr {
     content: "";
     width: 14px;
     height: 1px;
-    background: #d19f68;
+    background: #25ced1;
     left: 57px;
     top: 37px;
     transform: rotate(-46deg);
@@ -2600,7 +2600,7 @@ hr {
 }
 
 .header-area .main-header .main-menu ul li.active>a {
-    color: #d19f68
+    color: #25ced1
 }
 
 .header-area .main-header .main-menu ul li.active>a::before {
@@ -2614,7 +2614,7 @@ hr {
 }
 
 .header-area .main-header .main-menu ul li:hover>a {
-    color: #d19f68
+    color: #25ced1
 }
 
 .header-area .main-header .main-menu ul li:hover>a::before {
@@ -2656,7 +2656,7 @@ hr {
 }
 
 .header-area .main-header .main-menu ul ul.submenu>li>a:hover {
-    color: #d19f68;
+    color: #25ced1;
     background: none
 }
 
@@ -2687,7 +2687,7 @@ hr {
 }
 
 .header-sticky.sticky-bar {
-    background: #000
+    background: #fff
 }
 
 .header-sticky.sticky-bar.sticky .main-menu ul li a {
@@ -2729,7 +2729,7 @@ hr {
 }
 
 .mobile_menu .slicknav_menu .slicknav_btn .slicknav_icon-bar {
-    background-color: #d19f68 !important
+    background-color: #25ced1 !important
 }
 
 .mobile_menu .slicknav_menu .slicknav_nav {
@@ -2738,7 +2738,7 @@ hr {
 
 .mobile_menu .slicknav_menu .slicknav_nav a:hover {
     background: transparent;
-    color: #d19f68
+    color: #25ced1
 }
 
 .mobile_menu .slicknav_menu .slicknav_nav a {
@@ -2823,7 +2823,7 @@ hr {
 .slider-area .hero__caption span {
     overflow: hidden;
     font-size: 20px;
-    color: #d19f68;
+    color: #25ced1;
     font-weight: 500;
     margin-bottom: 26px;
     display: block;
@@ -3312,7 +3312,7 @@ hr {
 }
 
 .service-area .services-caption .service-cap h4 a:hover {
-    color: #d19f68
+    color: #25ced1
 }
 
 .services-caption:hover .service-icon::before {
@@ -3320,7 +3320,7 @@ hr {
 }
 
 .services-caption:hover .service-icon i {
-    background: #d19f68
+    background: #25ced1
 }
 
 .best-pricing {
@@ -3349,7 +3349,7 @@ hr {
 }
 
 .best-pricing .pricing-list ul li span {
-    color: #d19f68 !important;
+    color: #25ced1 !important;
     font-weight: 400;
     font-size: 16px
 }
@@ -3498,7 +3498,7 @@ hr {
 }
 
 .cut-details .single-cut .cut-descriptions span {
-    color: #d19f68;
+    color: #25ced1;
     font-size: 12px
 }
 
@@ -3543,7 +3543,7 @@ hr {
 }
 
 .cut-details .dot-style .slick-dots li.slick-active button {
-    background: #d19f68;
+    background: #25ced1;
     width: 35px
 }
 
@@ -3826,7 +3826,7 @@ hr {
 }
 
 .team-area .dot-style .slick-dots li.slick-active button {
-    background: #d19f68;
+    background: #25ced1;
     width: 35px
 }
 
@@ -3873,7 +3873,7 @@ hr {
 }
 
 .footer-area .footer-top .single-footer-caption .footer-number h4 {
-    color: #d19f68;
+    color: #25ced1;
     font-size: 30px;
     font-weight: 500;
     text-transform: capitalize
@@ -3946,7 +3946,7 @@ hr {
     padding: 14px 22px;
     background: #0a0f17;
     line-height: 1;
-    color: #d19f68;
+    color: #25ced1;
     font-size: 14px;
     font-weight: 300
 }
@@ -3960,7 +3960,7 @@ hr {
 }
 
 .footer-area .footer-top .single-footer-caption .footer-cap span {
-    color: #d19f68;
+    color: #25ced1;
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 10px;
@@ -3986,11 +3986,11 @@ hr {
 }
 
 .footer-area .footer-bottom .footer-copy-right p i {
-    color: #d19f68
+    color: #25ced1
 }
 
 .footer-area .footer-bottom .footer-copy-right p a {
-    color: #d19f68
+    color: #25ced1
 }
 
 .footer-area .footer-bottom .footer-copy-right p a:hover {
@@ -4190,7 +4190,7 @@ hr {
 }
 
 .home-blog-area .home-blog-single .blog-img-cap .blog-cap h3 a:hover {
-    color: #d19f68
+    color: #25ced1
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -4224,7 +4224,7 @@ hr {
 }
 
 .home-blog-single:hover .blog-img-cap .blog-img .blog-date {
-    background: #d19f68
+    background: #25ced1
 }
 
 .home-blog-single:hover .blog-img-cap .blog-img img {
@@ -4235,7 +4235,7 @@ hr {
 }
 
 .home-blog-single:hover .blog-img-cap .blog-cap {
-    border: 1px solid #d19f68;
+    border: 1px solid #25ced1;
     border-top: 0
 }
 
@@ -4250,7 +4250,7 @@ hr {
 }
 
 .blog_area a:hover, .blog_area a :hover {
-    background: -webkit-linear-gradient(131deg, #d19f68 0%, #d19f68 99%);
+    background: -webkit-linear-gradient(131deg, #25ced1 0%, #25ced1 99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
@@ -4689,7 +4689,7 @@ hr {
 }
 
 .blog_details a:hover {
-    color: #d19f68
+    color: #25ced1
 }
 
 .blog_details h2 {
@@ -4746,7 +4746,7 @@ hr {
     left: 10px;
     display: block;
     color: #fff;
-    background-color: #d19f68;
+    background-color: #25ced1;
     padding: 8px 15px;
     border-radius: 5px
 }
@@ -4828,7 +4828,7 @@ hr {
 }
 
 .blog_right_sidebar .search_widget .input-group button {
-    background: #d19f68;
+    background: #25ced1;
     border-left: 0;
     border: 1px solid #f0e9ff;
     padding: 4px 15px;
@@ -4945,7 +4945,7 @@ hr {
 }
 
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-    background: #d19f68;
+    background: #25ced1;
     color: #fff !important;
     -webkit-text-fill-color: #fff;
     text-decoration: none;
@@ -5152,7 +5152,7 @@ hr {
 }
 
 .single-post-area .blog-author a:hover {
-    color: #d19f68
+    color: #25ced1
 }
 
 .single-post-area .blog-author p {
