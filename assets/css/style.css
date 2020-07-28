@@ -3562,6 +3562,17 @@ hr {
     transition: .4s
 }
 
+.video-area {
+    height: 425px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.06);
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
 .gallery-area .box .big-img {
     height: 900px
 }
