@@ -144,11 +144,11 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: "Poppins", sans-serif;
-    color: #10285d;
+    color: #212025;
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 15px;
-    font-weight: normal
+    font-weight: 300
 }
 
 .bg-img-1 {
@@ -2190,8 +2190,9 @@ hr {
 }
 
 .section-padding30 {
-    padding-top: 175px;
-    padding-bottom: 160px
+    padding-top: 85px;
+    padding-bottom: 60px;
+    padding-left: 15px
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2383,7 +2384,7 @@ hr {
 }
 
 .section-tittle h2 {
-    font-size: 50px;
+    font-size: 44px;
     display: block;
     color: #1d2434;
     font-weight: 700;
