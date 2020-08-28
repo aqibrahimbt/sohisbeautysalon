@@ -23,13 +23,24 @@
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        .best-pricing .pricing-img .pricing-img2 {
-        position: absolute;
-        bottom: 25% !important;
-        left: 1%;
-        height: 50%;
-        width: auto;
+    
+<style>
+    
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 100% !important;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
     </style>
 </head>
@@ -66,7 +77,7 @@
                                         <ul id="navigation">
                                             <li><a href="index.html">Home</a></li>
                                             <li class="active"><a href="preiseliste.html">Preiseliste</a></li>
-                                            <li><a href="aktionen.html">Aktionen</a></li>
+                                            <li><a href="services.html">Services</a></li>
                                             <li><a href="galerie.html">Galerie</a>
                                             </li>
                                             <li><a href="kontakt.html">Kontakt</a></li>
@@ -105,61 +116,160 @@
          <div class="best-pricing section-padding2 position-relative">
             <div class="container">
                 <div class="row justify-content-end">
-                    <div class="col-xl-7 col-lg-7">
+                    <div class="col-xl-12 col-lg-12">
                         <!-- Pricing  -->
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="gallery">
+                                    <a>
+                                      <img src="assets/img/gallery/1.JPG" alt="Cinque Terre">
+                                    </a>
+                        </div>
+
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                
                                 <div class="pricing-list">
                                     <div class="section-tittle mb-50">
                                         <span><strong>Haarentfernung(IPL/SHR) Damen</strong></span>
                                     </div>
-                                    <ul>
-                                        <li>Oberlippe oder Ohren. . . . . . . . . . . . . . . . . . . <span>€25</span></li>
-                                        <li>Kinn oder Wangen . . . . . . . . . . . . . . . . . . . . . . <span>€30</span></li>
-                                        <li>Oberklippe & Kinn. . . . . . . . . . . . . . . . . . . . . . . <span>€45</span></li>
-                                        <li>Gesicht komplett. . . . . . . . . . . . . . . . . . . . . . . <span>€50</span></li>
-                                        <br>
-                                        <li> Achseln. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .<span>€35</span></li>
-                                        <li> Brustwarzen. . . . . . . . . . . . . . . . . . . . . . . . . . . .<span>€30</span></li>
-                                        <li> Bikini zone . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .<span>€40</span></li>
-                                        <li> Intimbereich und Gesäß komplett. . . . . . . .<span>€50</span></li><br>
-                                        <li> Rucken komplett. . . . . . . . . . . . . . . . . . . . . . . .<span>€60</span></li>
-                                        <li>Bauch . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . <span>€30</span></li> <br>
-                                        <li>Oberschenkel . . . . . . . . . . . . . . . . . . . . . . . . . .<span>€50</span></li>
-                                        <li>Unterschenkel. . . . . . . . . . . . . . . . . . . . . . . . . <span>€45</span></li>
-                                        <li> Beine und Füße komplett. . . . . . . . . . . . . . . .<span>€85</span></li>
-                                        <li>Gesamter Körper ab. . . . . . . . . . . . . . . . . . . <span>€190</span></li>
-                                    </ul>
+                                    <table class="table table-hover">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Service</th>
+                                            <th></th>
+                                            <th scope="col">Preise</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td colspan="2">Oberlippe oder Ohren</td>
+                                            <td>€25</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Kinn oder Wangen</td>
+                                            <td>€30</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Oberklippe & Kinn</td>
+                                            <td>€45</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Gesicht komplett</td>
+                                            <td>€50</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Achseln</td>
+                                            <td>€35</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Brustwarzen</td>
+                                            <td>€30</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Bikini zone</td>
+                                            <td>€40</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Intimbereich und Gesäß komplett</td>
+                                            <td>€50</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Rucken komplett</td>
+                                            <td>€60</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Bauch</td>
+                                            <td>€30</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Oberschenkel</td>
+                                            <td>€50</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Unterschenkel</td>
+                                            <td>€40</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Beine und Füße komplett</td>
+                                            <td>€85</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Gesamter Körper ab</td>
+                                            <td>€190</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="pricing-list">
                                     <div class="section-tittle mb-50">
                                         <span><strong>Haarentfernung(IPL/SHR) Herren</strong></span>
                                     </div>
-                                    <ul>
-                                        <li>Hals. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . <span>€40</span></li>
-                                        <li>Nacken. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . <span>€40</span></li>
-                                        <li>Kinn + Wangen . . . . . . . . . . . . . . . . . . . . . . . . . .<span>€50</span></li> <br>
-                                        <li>Achsein. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .<span>€40</span></li>
-                                        <li>Schultern komplett. . . . . . . . . . . . . . . . . . . . . <span>€50</span></li><br>
-                                        <li>Brust komplett. . . . . . . . . . . . . . . . . . . . . . . . . . <span>€70</span></li>
-                                        <li>Rücken und Brust . . . . . . . . . . . . . . . . . . . . . . .<span>€120</span></li><br>
-                                        <li>Arme . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .<span>€60</span></li><br>
-                                        <li>Rücken komplett . . . . . . . . . . . . . . . . . . . . . . . . .<span>€70</span></li>
-                                        <li>Beine komplett . . . . . . . . . . . . . . . . . . . . . . . . .<span>€85</span></li>
-                                        <li>Gesamter Körper ab . . . . . . . . . . . . . . . . . . . . . <span>€220</span></li>
-                                    </ul>
+                                    <table class="table table-hover">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Service</th>
+                                            <th></th>
+                                            <th scope="col">Preise</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td colspan="2">Hals</td>
+                                            <td>€40</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Nacken</td>
+                                            <td>€40</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Kinn + Wangen</td>
+                                            <td>€50</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Achseln</td>
+                                            <td>€40</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Schultern komplett</td>
+                                            <td>€50</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Brust komplett</td>
+                                            <td>€70</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Rücken und Brust</td>
+                                            <td>€120</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Arme</td>
+                                            <td>€60</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Rücken komplett</td>
+                                            <td>€70</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Beine komplett</td>
+                                            <td>€85</td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Gesamter Körper ab</td>
+                                            <td>€220</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                    
             <!-- pricing img -->
-            <div class="pricing-img">
-                <img class="pricing-img2" src="assets/img/gallery/1.JPG" alt="">
-            </div>
+            
             
         </div>
         <!-- Best Pricing Area End -->
