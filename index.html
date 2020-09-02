@@ -28,6 +28,63 @@
             width: 80%;
             height: 60%;
         }
+
+        /* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #555;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 8px 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
     </style>
 </head>
 <body>
@@ -157,8 +214,9 @@
                                 <h4><a>Dauerhafte Haarentfernung</a></h4>
                             </div>
                             <div class="form-group mt-3 center align-content-lg-center">
-                                <a class="btn btn-primary" href="Haarentfernung.html" role="button">Mehr Informationen</a>
-               
+                                <div class="popup" onclick="myFunction()"><a class="btn btn-primary" role="button">Mehr Informationen</a>
+                                    <span class="popuptext" id="myPopup">Dauerhafte Haarentfernung mit der revolutionären SHR-Technologie (Super Hair Removal) ist eine der effektivsten und schonendsten Methoden, mit der alle Haare- von fein bis kräftig und hell bis dunkel –erfolgreich entfernt werden können. Die Behandlung mit SHR-Technologie ist wesentlich angenehmer und sicherer als mit IPL, da die Hautverbrennungen ausgeschlossen sind.</span>
+                                  </div>
                            </div>
                         </div>
                     </div>
@@ -171,8 +229,9 @@
                                 <h4><a>Hautverjüngung</a></h4>
                             </div>
                             <div class="form-group mt-3 center align-content-lg-center">
-                                <a class="btn btn-primary" href="Hautverjungung.html" role="button">Mehr Informationen</a>
-               
+                                <div class="popup" onclick="myFunction1()"><a class="btn btn-primary" role="button">Mehr Informationen</a>
+                                    <span class="popuptext" id="myPopup1">Mit der neuesten IPL-Methode (Intensed Pulsed Light) können wir auch andere ästhetische Hautprobleme wie Akne, Pigmentflecken, Sommersprossen, Falten, Besenreiser, Rosacea und Couperose schnell und effektiv beseitigen. Die IPL-Therapie wird nach dem individuellen Hautzustand empfohlen.</span>
+                                  </div>
                            </div>
                         </div>
                     </div> 
@@ -185,7 +244,10 @@
                                 <h4><a>Lichttherapie</a></h4>
                             </div>
                             <div class="form-group mt-3 center align-content-lg-center">
-                                <a class="btn btn-primary" href="Lichttherapie.html" role="button">Mehr Informationen</a>
+                                <div class="popup" onclick="myFunction2()"><a class="btn btn-primary" role="button">Mehr Informationen</a>
+                                    <span class="popuptext" id="myPopup2">Eine sofortige Straffung der Haut. Die RF-Therapie (Radiofrequenz) ermöglicht es, die erschlafften Kollagenfasern so zu erwärmen, dass sie sich wieder zusammenziehen. Zusätzlich werden die Zellen stark zur Produktion von Kollagen angeregt. Die Ergebnisse sind mindesten 6-12 Monate, oft noch länger sichtbar.
+                                    </span>
+                                  </div>
                
                            </div>
                         </div>
@@ -267,7 +329,21 @@
     <!-- Jquery Plugins, main Jquery -->	
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
-    
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+        function myFunction1() {
+          var popup = document.getElementById("myPopup1");
+          popup.classList.toggle("show");
+        }
+        function myFunction2() {
+          var popup = document.getElementById("myPopup2");
+          popup.classList.toggle("show");
+        }
+        </script>
     </body>
 </html>
 
