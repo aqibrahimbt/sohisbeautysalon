@@ -25,65 +25,113 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         .about-area .about-img img {
-            width: 80%;
-            height: 60%;
+            width: 90%;
+            height: 40% !important;
         }
 
-        /* Popup container - can be anything you want */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+        :root {
+  --time: 0.707s;
 }
 
-/* The actual popup */
-.popup .popuptext {
-  visibility: hidden;
-  width: 300px;
-  background-color: #555;
-  color: #fff;
-  text-align: left;
-  border-radius: 6px;
-  padding: 8px 8px;
-  position: absolute;
+.cards {
+  display: grid;
+}
+
+.card {
+  -webkit-perspective: 40rem;
+          perspective: 1400px;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: var(--time) transform;
+  transition: var(--time) transform;
+}
+.card:hover .card-body, .card:focus .card-body {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.card-front, .card-back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  min-width: 100%;
+}
+
+.card-back {
+  -webkit-transform: rotateX(-180deg) translate(-100%, 0);
+          transform: rotateX(-180deg) translate(-100%, 0);
+}
+
+.cards {
+  grid-gap: 1.5rem;
+  grid-auto-rows: 1fr;
+  padding: 3rem;
+  background: whitesmoke;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card {
+  display: -webkit-box;
+  display: flex;
+  -webkit-transition: z-index, -webkit-transform calc(var(--time) / 4);
+  transition: z-index, -webkit-transform calc(var(--time) / 4);
+  transition: z-index, transform calc(var(--time) / 4);
+  transition: z-index, transform calc(var(--time) / 4), -webkit-transform calc(var(--time) / 4);
+  -webkit-transition-delay: var(--time), 0s;
+          transition-delay: var(--time), 0s;
+  text-decoration: none;
+  color: inherit;
+  z-index: 0;
+}
+.card:hover {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
   z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
+}
+.card:active {
+  -webkit-transform: scale(0.975);
+          transform: scale(0.975);
 }
 
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+.card-body {
+  border-radius: 0.15rem;
+  -webkit-box-flex: 1;
+        flex: 1;
 }
 
-/* Toggle this class - hide and show the popup */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
+.card-front, .card-back {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-radius: 0.15rem;
 }
 
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
+.card-front {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+.card-back {
+    font-size: 1.3rem;
+    text-align: left;
+    color: #000;
+    background: #fff;
+}
+
+.shadow, .card-front, .card-back {
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.04), 0 2px 2px rgba(0, 0, 0, 0.04), 0 4px 4px rgba(0, 0, 0, 0.04), 0 8px 8px rgba(0, 0, 0, 0.04), 0 16px 16px rgba(0, 0, 0, 0.04);
 }
     </style>
 </head>
@@ -120,12 +168,6 @@
                                         <ul id="navigation">
                                             <li class="active"><a href="index.html">Home</a></li>
                                             <li><a href="preiseliste.html">Preiseliste</a></li>
-                                            <li><a>Services</a>
-                                            <ul class="submenu">
-                                                <li><a href="Haarentfernung.html">Dauerhafte Haarentfernung</a></li>
-                                                <li><a href="Hautverjungung.html">Hautverjüngung</a></li>
-                                                <li><a href="Lichttherapie.html">Lichttherapie</a></li>
-                                            </ul></li>
                                             <li><a href="galerie.html">Galerie</a>
                                             </li>
                                             <li><a href="kontakt.html">Kontakt</a></li>
@@ -175,7 +217,7 @@
                     <div class="col-lg-6 col-md-11">
                         <!-- about-img -->
                         <div class="about-img ">
-                            <img src="assets/img/gallery/rsz_17.jpg" alt="">
+                            <img src="assets/img/gallery/1.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
@@ -206,51 +248,46 @@
                 <!-- Section caption -->
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="services-caption text-center mb-30">
-                            <div class="service-icon">
-                                <i class="flaticon-clock"></i>
-                            </div> 
-                            <div class="service-cap">
-                                <h4><a>Dauerhafte Haarentfernung</a></h4>
-                            </div>
-                            <div class="form-group mt-3 center align-content-lg-center">
-                                <div class="popup" onclick="myFunction()"><a class="btn btn-primary" role="button">Mehr Informationen</a>
-                                    <span class="popuptext" id="myPopup">Dauerhafte Haarentfernung mit der revolutionären SHR-Technologie (Super Hair Removal) ist eine der effektivsten und schonendsten Methoden, mit der alle Haare- von fein bis kräftig und hell bis dunkel –erfolgreich entfernt werden können. Die Behandlung mit SHR-Technologie ist wesentlich angenehmer und sicherer als mit IPL, da die Hautverbrennungen ausgeschlossen sind.</span>
-                                  </div>
-                           </div>
-                        </div>
+                        <div class="cards">                        
+                            <a class="card" href="#">
+                              <div class="card-body">
+                                <h2 class="card-front">
+                                Dauerhafte Haarentfernung (SHR)
+                                </h2>
+                                <p class="card-back">
+                                    Dauerhafte Haarentfernung mit der revolutionären SHR-Technologie (Super Hair Removal) ist eine der effektivsten und schonendsten Methoden, mit der alle Haare von fein bis kräftig und hell bis dunkel erfolgreich entfernt werden können. Die Behandlung mit SHR-Technologie ist wesentlich angenehmer und sicherer als mit IPL, da die Hautverbrennungen ausgeschlossen sind.
+                                </p>
+                              </div>
+                            </a>
+                          </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="services-caption active text-center mb-30">
-                            <div class="service-icon">
-                                <i class="flaticon-clock"></i>
-                            </div> 
-                            <div class="service-cap">
-                                <h4><a>Hautverjüngung</a></h4>
-                            </div>
-                            <div class="form-group mt-3 center align-content-lg-center">
-                                <div class="popup" onclick="myFunction1()"><a class="btn btn-primary" role="button">Mehr Informationen</a>
-                                    <span class="popuptext" id="myPopup1">Mit der neuesten IPL-Methode (Intensed Pulsed Light) können wir auch andere ästhetische Hautprobleme wie Akne, Pigmentflecken, Sommersprossen, Falten, Besenreiser, Rosacea und Couperose schnell und effektiv beseitigen. Die IPL-Therapie wird nach dem individuellen Hautzustand empfohlen.</span>
-                                  </div>
-                           </div>
-                        </div>
-                    </div> 
+                        <div class="cards">                        
+                            <a class="card" href="#">
+                              <div class="card-body">
+                                <h2 class="card-front">
+                                    Lichttherapie für die Haut (IPL)
+                                </h2>
+                                <p class="card-back">
+                                    Mit der neuesten IPL-Methode (Intensed Pulsed Light) können wir auch andere ästhetische Hautprobleme wie Akne, Pigmentflecken, Sommersprossen, Falten, Besenreiser, Rosacea und Couperose schnell und effektiv beseitigen. Die IPL-Therapie wird nach dem individuellen Hautzustand empfohlen. <br><br>
+                                </p>
+                              </div>
+                            </a>
+                          </div>
+                    </div>
                     <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="services-caption text-center mb-30">
-                            <div class="service-icon">
-                                <i class="flaticon-clock"></i>
-                            </div> 
-                            <div class="service-cap">
-                                <h4><a>Lichttherapie</a></h4>
-                            </div>
-                            <div class="form-group mt-3 center align-content-lg-center">
-                                <div class="popup" onclick="myFunction2()"><a class="btn btn-primary" role="button">Mehr Informationen</a>
-                                    <span class="popuptext" id="myPopup2">Eine sofortige Straffung der Haut. Die RF-Therapie (Radiofrequenz) ermöglicht es, die erschlafften Kollagenfasern so zu erwärmen, dass sie sich wieder zusammenziehen. Zusätzlich werden die Zellen stark zur Produktion von Kollagen angeregt. Die Ergebnisse sind mindesten 6-12 Monate, oft noch länger sichtbar.
-                                    </span>
-                                  </div>
-               
-                           </div>
-                        </div>
+                        <div class="cards">                        
+                            <a class="card" href="#">
+                              <div class="card-body">
+                                <h2 class="card-front">
+                                    Hautverjüngung und Faltenglättung (RF)
+                                </h2>
+                                <p class="card-back">
+                                    Eine sofortige Straffung der Haut. Die RF-Therapie (Radiofrequenz) ermöglicht es, die erschlafften Kollagenfasern so zu erwärmen, dass sie sich wieder zusammenziehen. Zusätzlich werden die Zellen stark zur Produktion von Kollagen angeregt. Die Ergebnisse sind mindesten 6-12 Monate, oft noch länger sichtbar. <br><br><br>
+                                </p>
+                              </div>
+                            </a>
+                          </div>
                     </div>
                 </div>
                 </div>
