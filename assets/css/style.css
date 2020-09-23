@@ -130,7 +130,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 16px
+    font-size: 17px
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -6933,3 +6933,14 @@ b, sup, sub, u, del {
 .switch-wrap {
     margin-bottom: 10px
 }
+
+.logo{
+	max-height: 100%;
+	max-width: 160%;
+	width:500px !important;
+	height:150px;
+	background-size: cover;
+    background-image: url("../img/gallery/rsz_logo_sohi.png");
+	float: left;
+}
+

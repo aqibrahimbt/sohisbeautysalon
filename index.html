@@ -39,7 +39,7 @@
 
 .card {
   -webkit-perspective: 40rem;
-          perspective: 1400px;
+          perspective: 5000px;
 }
 
 .card-body {
@@ -70,22 +70,39 @@
   grid-gap: 1.5rem;
   grid-auto-rows: 1fr;
   padding: 3rem;
-  background: whitesmoke;
+  background: #f8f8f8;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 .card {
-  display: -webkit-box;
-  display: flex;
-  -webkit-transition: z-index, -webkit-transform calc(var(--time) / 4);
-  transition: z-index, -webkit-transform calc(var(--time) / 4);
-  transition: z-index, transform calc(var(--time) / 4);
-  transition: z-index, transform calc(var(--time) / 4), -webkit-transform calc(var(--time) / 4);
-  -webkit-transition-delay: var(--time), 0s;
-          transition-delay: var(--time), 0s;
-  text-decoration: none;
-  color: inherit;
-  z-index: 0;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+
+
+.property-image
+{
+  height:6em;
+  width:14em;
+  padding:1em 2em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .card:hover {
   -webkit-transition-delay: 0s;
@@ -132,10 +149,6 @@
   box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.04), 0 2px 2px rgba(0, 0, 0, 0.04), 0 4px 4px rgba(0, 0, 0, 0.04), 0 8px 8px rgba(0, 0, 0, 0.04), 0 16px 16px rgba(0, 0, 0, 0.04);
 }
 
-#id{
-    
-
-}
     </style>
 </head>
 <body>
@@ -160,7 +173,6 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
-                                <a href="index.html">Sohi's Beauty Logo</a>
                             </div>
                         </div>
                         <div class="col-xl-10 col-lg-10 col-md-10">
