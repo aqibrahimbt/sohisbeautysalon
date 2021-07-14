@@ -6938,9 +6938,15 @@ b, sup, sub, u, del {
 	max-height: 100%;
 	max-width: 160%;
 	width:500px !important;
-	height:150px;
+    height:150px;
+    display: block;
 	background-size: cover;
     background-image: url("../img/gallery/rsz_logo_sohi.png");
 	float: left;
 }
 
+@media (max-width:629px) {
+    .logo {
+      display: none !important;
+    }
+  }
